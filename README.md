@@ -10,8 +10,8 @@ This is a simple Note Taker application that allows small business owners to wri
 
 
 ## Link
-Link to walkthrough video that demonstrates the functionality of the README generator.
-> https://drive.google.com/file/d/1lkJcFLsHy8FMPT0o2armtAIe102
+Link to deployed application.
+> https://desolate-journey-55866.herokuapp.com/
 
 
 ## Table of Contents
