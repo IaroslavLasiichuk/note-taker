@@ -11,7 +11,7 @@ This is a simple Note Taker application that allows small business owners to wri
 
 ## Link
 Link to walkthrough video that demonstrates the functionality of the README generator.
-> https://drive.google.com/file/d/1lkJcFLsHy8FMPT0o2armtAIe102-orXG/view
+> https://drive.google.com/file/d/1lkJcFLsHy8FMPT0o2armtAIe102
 
 
 ## Table of Contents
