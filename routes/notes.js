@@ -5,7 +5,7 @@ const uniqid = require('uniqid');
 
 // GET Route for retrieving all the notes
 notes.get('/', (req, res) => {
-    fs.readFile('./Develop/db/db.json', (err, data) => {
+    fs.readFile('./db/db.json', (err, data) => {
         (err) ? err : res.json(JSON.parse(data));
     });
 });
@@ -18,13 +18,13 @@ notes.post('/', (req, res) => {
     if (text && title) {
         // Variable for the object we will save
         const newNote = { text, title, id: uniqid() };
-        fs.readFile('./Develop/db/db.json', (err, data) => {
+        fs.readFile('./db/db.json', (err, data) => {
             (err) ? err : res.json(JSON.parse(data));
              // Convert string into JSON object
             const parsedNote = JSON.parse(data);
             // Add a new note
             parsedNote.push(newNote);
-            fs.writeFileSync('./Develop/db/db.json', JSON.stringify(parsedNote, null, 4), (err) => {
+            fs.writeFileSync('./db/db.json', JSON.stringify(parsedNote, null, 4), (err) => {
                 const response = {
                     status: 'success',
                     body: newNote,
@@ -40,7 +40,7 @@ notes.post('/', (req, res) => {
 // DELETE Route for a specific note
 notes.delete('/:id', (req, res) => {
     const noteId = req.params.id;
-    fs.readFile('./Develop/db/db.json', (err, data) => {
+    fs.readFile('./db/db.json', (err, data) => {
         if (err) {
           console.error(err);
         }
@@ -48,7 +48,7 @@ notes.delete('/:id', (req, res) => {
         const json = JSON.parse(data);
         const result = json.filter((note) => note.id !== noteId);
         try {
-          fs.writeFileSync('./Develop/db/db.json', JSON.stringify(result,null,4));
+          fs.writeFileSync('./db/db.json', JSON.stringify(result,null,4));
           console.log(`Item ${noteId} has been deleted 🗑️`);
           res.json(`Item ${noteId} has been deleted 🗑️`);
         } catch (err) {
