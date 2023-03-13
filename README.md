@@ -1,41 +1,49 @@
-# Note Taker Starter Code
+# Note Taker Application
+  <br>    
 
-## User Story
-* AS A small business owner
-* I WANT to be able to write and save notes
-* SO THAT I can organize my thoughts and keep track of tasks I need to complete
+  ## Description
 
-## Acceptance Criteria
-* GIVEN a note-taking application
-* WHEN I open the Note Taker
-* THEN I am presented with a landing page with a link to a notes page
-* WHEN I click on the link to the notes page
-* THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
-* WHEN I enter a new note title and the note’s text
-* THEN a Save icon appears in the navigation at the top of the page
-* WHEN I click on the Save icon
-* THEN the new note I have entered is saved and appears in the left-hand column with the other existing notes
-* WHEN I click on an existing note in the list in the left-hand column
-* THEN that note appears in the right-hand column
-* WHEN I click on the Write icon in the navigation at the top of the page
-* THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
+This is a simple Note Taker application that allows small business owners to write and save notes to keep track of their tasks and organize their thoughts.
 
-## Getting Started
-The application should have a db.json file on the back end that will be used to store and retrieve notes using the fs module.
+## License
+![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-The following HTML routes should be created:
+## Table of Contents
+  
+  * [Installation](#installation)
+  
+  * [Usage](#usage)
+  
+  * [Routes](#routes)
+  
+  * [Questions](#questions)
+     
+## Installation
+  To install necessary dependencies, run the following command:
 
-GET /notes should return the notes.html file.
+     npm i
 
-GET * should return the index.html file.
+## Usage
 
-The following API routes should be created:
+To use the Note Taker application, simply open it in your web browser and start writing notes. Click the Save icon to save your note and it will appear in the left-hand column. Click on an existing note in the left-hand column to view it in the right-hand column. Click on the Write icon to create a new note.
 
-GET /api/notes should read the db.json file and return all saved notes as JSON.
 
-POST /api/notes should receive a new note to save on the request body, add it to the db.json file, and then return the new note to the client. You'll need to find a way to give each note a unique id when it's saved (look into npm packages that could do this for you).
+## Routes
 
-## Bonus
-You haven’t learned how to handle DELETE requests, but this application has that functionality in the front end. As a bonus, see if you can add the DELETE route to the application using the following guideline:
+The following API routes are created:
 
-DELETE /api/notes/:id should receive a query parameter containing the id of a note to delete. In order to delete a note, you'll need to read all notes from the db.json file, remove the note with the given id property, and then rewrite the notes to the db.json file.
+GET /api/notes reads the db.json file and returns all saved notes as JSON.
+POST /api/notes receives a new note to save on the request body, adds it to the db.json file, and then returns the new note to the client. Each note is given a unique ID using an npm package.
+§
+
+The following HTML routes are created:
+
+GET /notes returns the notes.html file.
+GET * returns the index.html file.
+
+## Questions
+
+If you have any questions about the repo, open an issue or contact me direcly at lasmant@yahoo.com.
+You can find more of my work at https://github.com/iaroslavlasiichuk.  
+
+©2023 IAROSLAVLASIICHUK. Confidential and Proprietary. All Rights Reserved.

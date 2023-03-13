@@ -20,7 +20,7 @@ app.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, 'Develop/public/notes.html'));
 });
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'Develop/public/404.html'));
+    res.sendFile(path.join(__dirname, 'Develop/public/index.html'));
 });
 
 // Listen() method is responsible for listening for incoming connections on the specified port 
