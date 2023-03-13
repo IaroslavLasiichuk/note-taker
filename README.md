@@ -8,18 +8,37 @@ This is a simple Note Taker application that allows small business owners to wri
 ## License
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
+
+## Link
+Link to walkthrough video that demonstrates the functionality of the README generator.
+> https://drive.google.com/file/d/1lkJcFLsHy8FMPT0o2armtAIe102-orXG/view
+
+
 ## Table of Contents
-  
+  * [Requirements](#requirements)
+
   * [Installation](#installation)
   
   * [Usage](#usage)
   
   * [Routes](#routes)
+
+  * [Screenshot](#screenshot)
   
   * [Questions](#questions)
      
+## Requirements
+* Node.js v16
+* Express 
+* Uniqid
+* Nodemon
+
 ## Installation
-  To install necessary dependencies, run the following command:
+> To install the tool, follow these steps:
+
+> * Clone the repository to your local machine  [Git Hub Repo](https://github.com/IaroslavLasiichuk/note-taker)
+> * Open the command line and navigate to the directory where the repository was cloned.
+> * Run npm install to install the required dependencies.
 
      npm i
 
@@ -40,6 +59,9 @@ The following HTML routes are created:
 
 GET /notes returns the notes.html file.
 GET * returns the index.html file.
+
+## Screenshot
+![Screenshot](./Develop/public/assets/img/screeenshot.png)
 
 ## Questions
 
