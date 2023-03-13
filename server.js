@@ -6,8 +6,6 @@ const api = require('./routes/index.js');
 
 // Static middleware pointing to the public folder
 app.use(express.static('./public'));
-app.use('/css', express.static('./public/assets/css'))
-app.use('/js', express.static('./public/assets/js'))
 
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
