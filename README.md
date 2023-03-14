@@ -61,7 +61,7 @@ GET /notes returns the notes.html file.
 GET * returns the index.html file.
 
 ## Screenshot
-![Screenshot](./Develop/public/assets/img/screeenshot.png)
+![Screenshot](./img/screeenshot.png)
 
 ## Questions
 
